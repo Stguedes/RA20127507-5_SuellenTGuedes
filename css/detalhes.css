@@ -1,0 +1,58 @@
+.detalhe-produto {
+  /* display */
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 3rem;
+
+  /* box-model */
+  margin-top: var(--default-height-header);
+  width: var(--default-width);
+  padding: 2rem 0.5rem;
+}
+
+.detalhe-produto-img {
+  /* box-model */
+  width: 100%;
+  background-color: var(--cor);
+}
+
+.detalhe-info-titulo {
+  /* tipografia */
+  font-size: 3rem;
+}
+
+.detalhe-info-preco {
+  /* tipografia */
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.detalhe-info-descricao {
+  /* box-mode */
+  margin: 2rem 0;
+
+  /* tipografia */
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.detalhe-info-butao {
+  /* box-model */
+  padding: 0.8rem;
+  background-color: #000;
+  border: none;
+  border-radius: 0.3rem;
+
+  /* tipografia */
+  color: #fcfcfc;
+  font-size: 1rem;
+
+  /* outros */
+  cursor: pointer;
+}
+
+.detalhe-info-butao:hover {
+  /* box-model */
+  background-color: rgba(0, 0, 0, 0.8);
+}
