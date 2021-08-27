@@ -20,7 +20,7 @@
     </section>
     <section class="grid-produtos">
       <?php foreach ($listaProdutos as $indice => $produto) { ?>
-        <div class="car-prod">
+        <div class="car-prod" prod-id="<?php echo $indice ?>" produto-card>
           <img src="<?php echo $produto['img'] ?>" class="card-prod-img" style="--cor:<?php echo $produto['cor'] ?>;" alt="imagem">
           <h3 class="card-prod-titulo">
             <?php echo $produto['titulo'] ?>
@@ -35,6 +35,7 @@
 
   <?php include "./pages/partials/footer.php" ?>
   <script src="./js/header.js"></script>
+  <script src="/js/produtoDetalhes.js"></script>
 </body>
 
 </html>
