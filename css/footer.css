@@ -1,0 +1,10 @@
+.footer {
+  /* Box-mode */
+  /* Esse tamanho pode ser encontrado em basico.css */
+  width: var(--default-width);
+  padding: 1rem;
+
+  /* tipografia */
+  color: #9e9b9c;
+  font-size: 0.7rem;
+}

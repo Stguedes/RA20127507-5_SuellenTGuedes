@@ -1,0 +1,91 @@
+.header {
+  /* Display */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* Posicionamento */
+  position: fixed;
+
+  /* Box-model */
+  width: var(--default-width);
+  /* O tamanho do header se encontra no arquivo basico.css */
+  height: var(--default-height-header);
+  padding: 0.5rem;
+}
+
+.logo {
+  /* Tipografia */
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.navbar-butao {
+  /* Display */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  /* Box-mode */
+  width: 3rem;
+  height: 3rem;
+  background-color: black;
+  border: none;
+  border-radius: 50%;
+
+  /* Gerais */
+  cursor: pointer;
+}
+
+.hamburguer {
+  display: block;
+  background: white;
+  width: 1.5rem;
+  height: 0.08rem;
+}
+
+.navbar-nav {
+  /* Display */
+  display: none;
+
+  /* Position */
+  position: absolute;
+  top: var(--default-height-header);
+  left: 0;
+
+  /* Box-model */
+  width: var(--default-width);
+  height: calc(100vh - var(--default-height-header));
+  /* O background se encontra no arquivo basico.css */
+  background: var(--default-background);
+
+  /* Tipografia */
+  list-style: none;
+}
+
+.navbar-link {
+  /* Display */
+  display: block;
+
+  /* Box-Model */
+  padding: 1rem;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+
+  /* Tipografia */
+  font-size: 1.2rem;
+
+  /* Gerais */
+  cursor: pointer;
+}
+
+.navbar-link:hover {
+  /* Box-Model */
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.navbar-ativo {
+  /* Display */
+  display: block;
+}
