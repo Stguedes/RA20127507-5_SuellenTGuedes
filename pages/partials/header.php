@@ -13,7 +13,7 @@
                 <a href="/" class="navbar-link">Home</a>
             </li>
             <li class="navbar-item">
-                <a href="" class="navbar-link">Sobre</a>
+                <a href="/pages/sobre.php" class="navbar-link">Sobre</a>
             </li>
             <li class="navbar-item">
                 <a href="/pages/contato.php" class="navbar-link">Contato</a>
