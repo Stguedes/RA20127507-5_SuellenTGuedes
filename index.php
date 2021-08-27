@@ -11,17 +11,24 @@
 
 <body>
   <?php include "./pages/partials/header.php" ?>
+  <?php include_once "./data/produtos.php" ?>
 
   <main class="main-produtos">
     <section class="titulo-produtos">
       <h1>Nossos Produtos</h1>
     </section>
     <section class="grid-produtos">
-      <div class="car-prod">
-        <img src="" alt="imagem" class="card-prod-img">
-        <h3 class="card-titulo">titulo</h3>
-        <p class="card-preco">preco</p>
-      </div>
+      <?php foreach ($listaProdutos as $indice => $produto) { ?>
+        <div class="car-prod">
+          <img src="<?php echo $produto['img'] ?>" alt="imagem" class="card-prod-img" style="--cor:<?php echo $produto['cor'] ?>;">
+          <h3 class="card-prod-titulo">
+            <?php echo $produto['titulo'] ?>
+          </h3>
+          <p class="card-prod-preco">
+            $ <?php echo $produto['preco'] ?>
+          </p>
+        </div>
+      <?php } ?>
     </section>
   </main>
 
