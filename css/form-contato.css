@@ -1,0 +1,73 @@
+.contato {
+  /* display */
+  flex: 1;
+
+  /* box-model */
+  width: var(--default-width);
+  padding: 1rem;
+  margin-top: var(--default-height-header);
+}
+
+.contato-titulo h1 {
+  /* box-mode */
+  margin-bottom: 1rem;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  /* tipografia */
+  font-weight: normal;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+.contato-form {
+  /* display */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.duas {
+  /* display */
+  grid-column: span 2;
+}
+
+.contato-input {
+  /* box-model */
+  background-color: #f4f4f6;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+
+  /* tipografia */
+  font-size: 1rem;
+  color: #000;
+}
+
+.contato-butoes {
+  /* display */
+  display: flex;
+  justify-content: flex-end;
+
+  /* box-model */
+  margin-top: 1rem;
+}
+
+.contato-butao {
+  /* box-model */
+  padding: 0.5rem;
+  width: 10rem;
+  background-color: #000;
+  border: none;
+  border-radius: 0.2rem;
+
+  /* tipografia */
+  font-size: 0.8rem;
+  color: #f4f4f6;
+
+  /* outros */
+  cursor: pointer;
+}
+
+.contato-butao:hover {
+  /* box-model */
+  background-color: rgba(0, 0, 0, 0.9);
+}

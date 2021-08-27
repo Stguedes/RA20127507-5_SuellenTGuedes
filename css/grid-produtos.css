@@ -1,0 +1,54 @@
+.main-produtos {
+  /* display */
+  flex: 1;
+
+  /* box-model */
+  margin-top: var(--default-height-header);
+  width: var(--default-width);
+  padding: 2rem 0.5rem;
+}
+
+.titulo-produtos h1 {
+  /* box-mode */
+  margin-bottom: 1rem;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  /* tipografia */
+  font-weight: normal;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+.grid-produtos {
+  /* display */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.car-prod {
+  /* outros */
+  cursor: pointer;
+}
+
+.card-prod-img {
+  /* box-model */
+  background-color: var(--cor);
+  width: 80%;
+}
+
+.card-prod-titulo {
+  /* box-mode */
+  padding: 0 0.2rem;
+  /* tipografia */
+  font-size: 1rem;
+  color: #6b6b6b;
+}
+
+.card-prod-preco {
+  /* box-mode */
+  padding: 0 0.2rem;
+  /* tipografia */
+  font-size: 0.8rem;
+  font-style: italic;
+  color: #2e2e2e;
+}

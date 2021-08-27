@@ -10,13 +10,13 @@
         </button>
         <ul class="navbar-nav" navbar-nav>
             <li class="navbar-item">
-                <a href="" class="navbar-link">Home</a>
+                <a href="/" class="navbar-link">Home</a>
             </li>
             <li class="navbar-item">
                 <a href="" class="navbar-link">Sobre</a>
             </li>
             <li class="navbar-item">
-                <a href="" class="navbar-link">Contato</a>
+                <a href="/pages/contato.php" class="navbar-link">Contato</a>
             </li>
         </ul>
     </nav>
